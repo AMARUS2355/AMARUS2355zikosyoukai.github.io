@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自己紹介</title>
+  <link rel="stylesheet" href="a.css">
+</head>
+<body>
+  <h1 span class="c06 active">自己紹介</span h1>
+    <h1></h1><br>
+  <h2> 名前：AMARUS2355 </h2>
+   <h2>趣味：ゲーム</h2>
+
+     <h2>経過時間：<span id="seconds">0</span>秒</h2>
+
+  <script>
+    const startTime = Date.now();
+    const target = document.getElementById('seconds');
+
+    setInterval(() => {
+      const elapsedSeconds = Math.floor((Date.now() - startTime) / 1000);
+      target.textContent = elapsedSeconds;
+    }, 100);
+  </script>
+</body>
+</html>
